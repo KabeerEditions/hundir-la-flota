@@ -1,0 +1,198 @@
+body {
+    font-family: 'Rajdhani';
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background: linear-gradient(-45deg, #2193b0, #6dd5ed, #2193b0);
+    background-size: 600% 600%;
+    animation: fondoAnimado 12s ease infinite;
+}
+
+@keyframes fondoAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#MenuInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#titulo {
+    font-size: 60px;
+    font-family: 'Bebas Neue';
+}
+
+button {
+    margin: 20px;
+    background-color: #3A86FF;
+    border: 5px solid #1C2541;
+    border-radius: 12px;
+    background-position: 0% 0%;
+    background-size: 200% 200%;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: #1a4891;
+}
+
+#entrarPartida {
+    font-size: 20px;
+    width: 170px;
+    height: 70px;
+}
+
+#crearPartida {
+    font-size: 20px;
+    width: 130px;
+    height: 70px;
+}
+
+#MenuInicio input {
+    -webkit-appearance: textfield;
+    border-radius: 12px;
+    border: 1px solid #1C2541;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+}
+
+#Juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    position: relative;
+}
+
+#jugar {
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+}
+
+#casillas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.casilla {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    background-color: #1C2541;
+    box-sizing: border-box;
+}
+
+.selecionado {
+    opacity: 80%;
+}
+
+#code {
+    position: fixed;
+    bottom: 20px;
+    right: 3%;
+}
+
+#barcos {
+    position: absolute;
+    left: 5%;
+    background-color: #1e2a38;
+    width: 400px;
+    height: 720px;
+    border-radius: 12px;
+}
+
+#barcos h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+}
+
+#casillas div, #barcos div {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cruz-barco {
+    background-image: url(images/Iconos/tocar-barco.png);
+}
+
+.cruz-agua {
+    background-image: url(images/Iconos/tocar-agua.png);
+}
+
+.barco-a-completo {
+    background-image: url(images/Barcos/barco-a.png);
+    width: 350px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.barco-a-1 {
+    background-image: url(images/Barcos/barco-a-1.png);
+}
+
+.barco-a-2 {
+    background-image: url(images/Barcos/barco-a-2.png);
+}
+
+.barco-b-completo {
+    background-image: url(images/Barcos/barco-b.png);
+    width: 350px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.barco-b-1 {
+    background-image: url(images/Barcos/barco-b-1.png);
+}
+
+.barco-b-2 {
+    background-image: url(images/Barcos/barco-b-2.png);
+}
+
+.barco-b-3 {
+    background-image: url(images/Barcos/barco-b-3.png);
+}
+
+.barco-c-completo {
+    background-image: url(images/Barcos/barco-c.png);
+    width: 350px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.barco-c-1 {
+    background-image: url(images/Barcos/barco-c-1.png);
+}
+
+.barco-c-2 {
+    background-image: url(images/Barcos/barco-c-2.png);
+}
+
+.barco-c-3 {
+    background-image: url(images/Barcos/barco-c-3.png);
+}
+
+.barco-c-4 {
+    background-image: url(images/Barcos/barco-c-4.png);
+}
